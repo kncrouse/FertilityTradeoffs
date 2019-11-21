@@ -1,0 +1,51 @@
+setwd("~/Dropbox/MODELS/Fertility Tradeoffs")
+dat <- read.csv("FertilityTradeoffs20171001_4.csv")
+head(dat)
+results = lm(gene ~ adult + child + cost.benefit, data = dat)#
+summary(results)
+results = lm(median.children ~ child + cost.benefit, data = dat)#
+summary(results)
+results = lm(median.children ~ child, data = dat)#
+summary(results)
+results = lm(median.children ~ adult, data = dat)#
+summary(results)
+results = lm(median.children ~ cost.benefit, data = dat)#
+summary(results)
+results = lm(gene ~ cost.benefit, data = dat)#
+summary(results)
+results = lm(median.education ~ child, data = dat)#
+summary(results)
+results = lm(median.education ~ median.children, data = dat)#
+summary(results)
+dat <- read.csv("FertilityTradeoffs20171001_4B.csv")
+results = lm(median.education ~ median.children, data = dat)#
+summary(results)
+dat <- read.csv("FertilityTradeoffs20171001_4B.csv")#
+head(dat)
+dat <- read.csv("FertilityTradeoffs20171001_4B.csv")#
+head(dat)
+results = lm(median.education ~ median.children, data = dat)#
+summary(results)
+dat <- read.csv("FertilityTradeoffs20171001_4B.csv")#
+head(dat)
+results = lm(median.education ~ median.children, data = dat)#
+summary(results)
+results = lm(child ~ median.children, data = dat)#
+summary(results)
+results = lm(child ~ median.education, data = dat)#
+summary(results)
+results = lm(median.education ~ child, cost.benefit, data = dat)#
+summary(results)
+manova(results)
+anova(results)
+results = lm(median.education ~ child + cost.benefit, data = dat)#
+summary(results)#
+anova(results)
+head(dat)
+dat <- read.csv("FertilityTradeoffs20171001_4.csv")#
+head(dat)
+results = lm(median.education ~ child + cost.benefit, data = dat)#
+summary(results)#
+anova(results)
+results = lm(median.education ~ median.children, data = dat)#
+summary(results)
